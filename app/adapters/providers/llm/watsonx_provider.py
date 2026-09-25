@@ -7,7 +7,6 @@ the application-level LLMProvider interface.
 
 import logging
 
-from ...base_provider import LLMProvider
 from ibm_watsonx_ai import Credentials
 from ibm_watsonx_ai.foundation_models import Model
 from ibm_watsonx_ai.metanames import GenTextParamsMetaNames as GenParams
@@ -21,6 +20,7 @@ from app.config import (
     WATSONX_PROJECT_ID,
     WATSONX_URL,
 )
+from app.ports.outbound.llm_provider import LLMProvider
 
 logger = logging.getLogger(__name__)
 

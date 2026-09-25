@@ -9,12 +9,12 @@ import logging
 
 import requests
 
-from app.ai.llm.base import LLMProvider
 from app.config import (
     LOCAL_LLM_BASE_URL,
     LOCAL_LLM_MODEL,
     LOCAL_LLM_TIMEOUT,
 )
+from app.ports.outbound.llm_provider import LLMProvider
 
 logger = logging.getLogger(__name__)
 

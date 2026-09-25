@@ -9,13 +9,13 @@ import logging
 
 from langchain_ibm import WatsonxEmbeddings
 
-from app.ai.embeddings.base import EmbeddingProvider
 from app.config import (
     WATSONX_API_KEY,
     WATSONX_EMBEDDING_MODEL_ID,
     WATSONX_PROJECT_ID,
     WATSONX_URL,
 )
+from app.ports.outbound.embedding_provider import EmbeddingProvider
 
 logger = logging.getLogger(__name__)
 

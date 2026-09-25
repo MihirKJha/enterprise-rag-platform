@@ -8,12 +8,12 @@ import logging
 
 import requests
 
-from app.ai.embeddings.base import EmbeddingProvider
 from app.config import (
     LOCAL_EMBEDDING_MODEL,
     LOCAL_LLM_BASE_URL,
     LOCAL_LLM_TIMEOUT,
 )
+from app.ports.outbound.embedding_provider import EmbeddingProvider
 
 logger = logging.getLogger(__name__)
 

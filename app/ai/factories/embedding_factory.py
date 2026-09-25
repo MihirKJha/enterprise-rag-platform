@@ -7,10 +7,10 @@ provider-specific implementation details to the application layer.
 
 import logging
 
-from app.ai.embeddings.base import EmbeddingProvider
-from app.ai.embeddings.providers.local_embedding import LocalEmbeddingProvider
-from app.ai.embeddings.providers.watsonx_embedding import WatsonxEmbeddingProvider
+from app.adapters.providers.embeddings.local_embedding import LocalEmbeddingProvider
+from app.adapters.providers.embeddings.watsonx_embedding import WatsonxEmbeddingProvider
 from app.config import EMBEDDING_PROVIDER
+from app.ports.outbound.embedding_provider import EmbeddingProvider
 
 logger = logging.getLogger(__name__)
 

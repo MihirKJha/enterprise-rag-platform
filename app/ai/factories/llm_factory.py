@@ -7,10 +7,10 @@ provider-specific implementation details to the application layer.
 
 import logging
 
-from app.ai.llm.base import LLMProvider
-from app.ai.llm.providers.local_provider import LocalLLMProvider
-from app.ai.llm.providers.watsonx_provider import WatsonxLLMProvider
+from app.adapters.providers.llm.local_provider import LocalLLMProvider
+from app.adapters.providers.llm.watsonx_provider import WatsonxLLMProvider
 from app.config import AI_PROVIDER
+from app.ports.outbound.llm_provider import LLMProvider
 
 logger = logging.getLogger(__name__)
 
