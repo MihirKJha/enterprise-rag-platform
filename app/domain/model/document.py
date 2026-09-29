@@ -1,10 +1,10 @@
 from dataclasses import dataclass
 
+from app.domain.value_objects.document_id import DocumentId
+
 
 @dataclass
 class Document:
-    id: str
+    id: DocumentId
     content: str
-    source: str
     metadata: dict[str, object]
-    version: str | None = None
