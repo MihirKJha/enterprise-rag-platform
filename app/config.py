@@ -34,6 +34,8 @@ def get_required_setting(name: str) -> str:
     return value
 
 
+RAG_FRAMEWORK = get_required_setting("RAG_FRAMEWORK")
+
 AI_PROVIDER = get_required_setting("AI_PROVIDER")
 EMBEDDING_PROVIDER = get_required_setting("EMBEDDING_PROVIDER")
 RETRIEVAL_PROVIDER = get_required_setting("RETRIEVAL_PROVIDER")
