@@ -1,3 +1,12 @@
+<div align="center">
+  <img src="docs/images/enterprise-rag-platform.png" alt="Enterprise RAG Platform overview" width="100%" />
+</div>
+
+<h1 align="center">Enterprise RAG Platform</h1>
+
+<p align="center">An enterprise-grade Retrieval-Augmented Generation (RAG) architecture for investigating knowledge across heterogeneous enterprise sources.</p>
+
+
 # Enterprise RAG Platform
 
 > An enterprise-grade Retrieval-Augmented Generation (RAG) architecture for investigating knowledge across heterogeneous enterprise sources.
@@ -288,7 +297,7 @@ class Document:
     metadata: dict[str, object]
 ```
 
-Represents a source document independently of YouTube, LangChain, or LlamaIndex.
+Represents a source document independently LangChain, or LlamaIndex.
 
 ## DocumentChunk
 
@@ -355,12 +364,6 @@ SPARSE
 HYBRID
 ```
 
-### KnowledgeSource
-
-The initial migrated source is:
-
-```text
-YOUTUBE
 ```
 
 Future values are introduced when the corresponding capability is implemented.
@@ -446,9 +449,7 @@ Factories such as `LLMFactory`, `EmbeddingFactory`, `RetrieverFactory`, and `Rer
 The authoritative implementation sequence is:
 
 ```text
-PHASE 0 — Skeleton + Foundation + Migration Preparation
-        ↓
-MIGRATE / GENERALIZE EXISTING YOUTUBE CODE
+PHASE 0 — Skeleton + Foundation  Preparation
         ↓
 PHASE 1 — Enterprise RAG Core
         ↓
@@ -872,7 +873,6 @@ Experiments remain separate from production-oriented application code.
 This project is intentionally not:
 
 - A generic "chat with PDF" application
-- A YouTube-specific RAG application
 - A single-vector-database chatbot
 - A collection of unrelated RAG demos
 - A framework-specific tutorial
@@ -880,41 +880,6 @@ This project is intentionally not:
 
 The goal is an extensible enterprise retrieval architecture.
 
----
-
-# Related Projects
-
-The architecture evolves from:
-
-```text
-genai-youtube-analyzer
-        ↓
-enterprise-rag-platform
-        ↓
-Domain Applications
-        ├── Aviation Maintenance & Reliability Intelligence
-        └── Renewable Energy Operations Intelligence
-```
-
-`genai-youtube-analyzer` provides proven working components that are generalized and moved behind enterprise architectural boundaries.
-
----
-
-# Status
-
-🚧 **Architecture & Skeleton — Phase 0**
-
-Current focus:
-
-1. Establish repository skeleton
-2. Validate package boundaries
-3. Establish Phase 0 foundations
-4. Migrate and generalize reusable components
-5. Preserve a working baseline
-6. Implement Phase 1
-7. Implement Phase 2
-8. Implement Phase 3
-9. Review architecture before proceeding further
 
 ---
 
